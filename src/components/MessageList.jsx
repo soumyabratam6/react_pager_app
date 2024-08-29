@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-key */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -25,11 +24,11 @@ const MessageList = () => {
   return (
     <div className="message-container">
       {messages.length > 0 &&
-        messages.map((message) => {
+        messages.map((message,index) => {
           return (
-            <div className="message-card">
-              <div className="user-name">{message.firstName}</div>
-              <div className="user-message">{message.message}</div>
+            <div className="message-card" key={index}>
+              <div className='user-name'>{message.firstName}</div>
+              <div className="user-message" >{message.message}</div>
             </div>
           );
         })}

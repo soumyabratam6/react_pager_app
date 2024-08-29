@@ -5,9 +5,9 @@ import MessageList from "./components/MessageList";
 import "./app.css";
 const App = () => {
   return (
-    <div className="app">
+    <div className="App">
       <div className="container">
-        <dive className="shape-1"></dive>
+        <div className="shape-1"></div>
         <div className="shape-2"></div>
         <Form />
       </div>
