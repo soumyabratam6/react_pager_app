@@ -2,7 +2,7 @@
 import React from "react";
 import Form from "./components/Form";
 import MessageList from "./components/MessageList";
-import "./app.css";
+import "./App.css";
 const App = () => {
   return (
     <div className="App">
